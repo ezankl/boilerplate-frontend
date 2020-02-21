@@ -6,7 +6,6 @@ import CATEGORY_ARTICLES_QUERY from "../../queries/category/articles";
 
 const Category = () => {
   let { id } = useParams();
-
   return (
     <Query query={CATEGORY_ARTICLES_QUERY} id={id}>
       {({ data: { category } }) => {
