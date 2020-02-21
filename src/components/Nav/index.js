@@ -12,16 +12,11 @@ const Nav = () => {
           return (
             <div>
               <nav className="uk-navbar-container" data-uk-navbar>
-                <div className="uk-navbar-left">
+                <div className="uk-navbar-center">
                   <ul className="uk-navbar-nav">
                     <li>
-                      <Link to="/">Strapi Blog</Link>
+                      <Link to="/">Home</Link>
                     </li>
-                  </ul>
-                </div>
-
-                <div className="uk-navbar-right">
-                  <ul className="uk-navbar-nav">
                     {categories.map((category, i) => {
                       return (
                         <li key={category.id}>
